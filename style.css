@@ -1,92 +1,137 @@
-body {
+/* Base layout */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f3f4f6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
-.container {
-  text-align: center;
+body {
+  background-color: #0f0f0f;
+  color: #f5c518; /* Matte gold */
+  line-height: 1.6;
 }
 
-#showProfile {
-  padding: 15px 30px;
-  font-size: 18px;
-  background: #111827;
-  color: white;
-  border: none;
-  border-radius: 10px;
+/* Email Card Button */
+.email-btn {
+  background-color: #1a1a1a;
+  border: 2px solid #f5c518;
+  color: #f5c518;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
   cursor: pointer;
+  margin: 2rem auto;
+  display: block;
+  transition: all 0.4s ease-in-out;
 }
-#showProfile:hover {
+
+.email-btn:hover {
+  background-color: #f5c518;
+  color: #0f0f0f;
+  box-shadow: 0 0 10px #f5c518;
+}
+
+/* Details Card Reveal */
+.details-card {
+  display: none;
+  max-width: 1000px;
+  margin: 1rem auto;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(245, 197, 24, 0.3);
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+/* Profile Image */
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #f5c518;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
   transform: scale(1.05);
 }
 
-.profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 1000px;
-  gap: 30px;
+/* Resume iframe */
+.resume-frame {
+  width: 100%;
+  height: 600px;
+  border: 2px solid #f5c518;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
 
-.hidden {
-  display: none;
+/* Social icons */
+.social-links {
+  margin-top: 1.5rem;
 }
 
-.left {
-  flex: 1;
-  text-align: center;
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.socials {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.socials img {
+.social-links a img {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0) invert(1);
 }
-.socials img:hover {
+
+.social-links a img:hover {
   transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #f5c518);
 }
 
-.resume {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  background: #2563eb;
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
-}
-.resume:hover {
-  background: #1e40af;
+/* Sections inside the card */
+section {
+  margin-top: 2rem;
 }
 
-.right {
-  flex: 2;
-  text-align: left;
+section h2 {
+  color: #f5c518;
+  border-bottom: 1px solid #f5c518;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
+
+section ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .resume-frame {
+    height: 400px;
+  }
+
+  .profile-pic {
+    width: 120px;
+  }
+
+  .email-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
