@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sandeep's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandeep Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="main-container">
-    <div class="email-card" onclick="expandCard()">
-      <h1>Sandeep's Portfolio</h1>
-      <p>Click to view details</p>
-    </div>
+    <section class="email-section">
+      <button id="emailBtn">Click to View Portfolio</button>
+    </section>
 
-    <div class="details" id="details">
-      <section class="about">
-        <h2>About</h2>
-        <p>B.Tech CSE (Data Science) student passionate about full-stack and data-driven projects.</p>
-      </section>
+    <section id="detailsCard" class="hidden">
+      <div class="card">
+        <div class="card-header">
+          <img src="profile.jpg" alt="Profile" class="profile-img">
+          <h1>Sandeep</h1>
+          <p>Data Science Enthusiast</p>
+        </div>
 
-      <section class="strengths">
-        <h2>Strengths</h2>
-        <ul>
-          <li>Creative Problem Solver</li>
-          <li>Team Collaboration</li>
-          <li>Continuous Learner</li>
-        </ul>
-      </section>
+        <div class="card-section">
+          <h2>About</h2>
+          <p>I'm a passionate B.Tech student specialized in Computer Science with a focus on Data Science. I love building innovative solutions and collaborating with creative minds.</p>
+        </div>
 
-      <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Java, Python, C</li>
-          <li>HTML, CSS, JavaScript</li>
-          <li>React, GitHub</li>
-          <li>SQL, Pandas, NumPy</li>
-        </ul>
-      </section>
+        <div class="card-section">
+          <h2>Strengths</h2>
+          <ul>
+            <li>Creative Problem Solving</li>
+            <li>Quick Learner</li>
+            <li>Team Player</li>
+            <li>Resilient and Focused</li>
+          </ul>
+        </div>
 
-      <section class="education">
-        <h2>Education</h2>
-        <ul>
-          <li>MLRITM – B.Tech CSE (Data Science)</li>
-          <li>GPT YGT – Diploma</li>
-          <li>Newton High School</li>
-        </ul>
-      </section>
+        <div class="card-section">
+          <h2>Skills</h2>
+          <ul>
+            <li>Python, Java, JavaScript</li>
+            <li>Machine Learning, Pandas, NumPy</li>
+            <li>Spring Boot, SQL, Git & GitHub</li>
+            <li>React Basics, HTML/CSS</li>
+          </ul>
+        </div>
 
-      <section class="projects">
-        <h2>Projects Done</h2>
-        <ul>
-          <li>RentSaviour – Emergency Item Rental App</li>
-          <li>CreatorCollab – Find teammates for ideas</li>
-          <li>Horror Visual Story Series – Realistic narrated storytelling</li>
-        </ul>
-      </section>
+        <div class="card-section">
+          <h2>Education</h2>
+          <p><strong>MLRITM</strong> – B.Tech in CSE (Data Science)<br>Newton High School, GPT YGT</p>
+        </div>
 
-      <section class="links">
-        <h2>Contact</h2>
-        <a href="https://github.com/VENKATASANDEEPJ" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/j-v-sandeep-75a305349/" target="_blank">LinkedIn</a>
-        <a href="#" onclick="alert('Viewing only — Resume coming soon!')">View Resume</a>
-      </section>
-    </div>
+        <div class="card-section">
+          <h2>Projects</h2>
+          <ul>
+            <li>RentSaviour App – Hostel item rental platform</li>
+            <li>Horror Story Visual Series – Thriller storytelling in visual format</li>
+            <li>JPMC Forage Internship – H2 DB + Kafka transaction validation</li>
+          </ul>
+        </div>
+
+        <div class="card-footer">
+          <a href="resume.pdf" target="_blank" class="view-btn">View Resume</a>
+          <a href="https://github.com/VENKATASANDEEPJ" target="_blank"><img src="github.jpg" class="icon"></a>
+          <a href="https://linkedin.com/in/VENKATASANDEEPJ" target="_blank"><img src="linkedin.jpg" class="icon"></a>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <script>
-    function expandCard() {
-      document.getElementById("details").classList.toggle("show");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
-</html>
 
+</html>
