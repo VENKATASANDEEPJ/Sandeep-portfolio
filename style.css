@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+#showProfile {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#showProfile:hover {
+  transform: scale(1.05);
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+  gap: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.resume {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.resume:hover {
+  background: #1e40af;
+}
+
+.right {
+  flex: 2;
+  text-align: left;
+}
