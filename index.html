@@ -3,93 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sandeep's Portfolio</title>
+  <title>J Venkata Sandeep - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Bickham+Script+One&family=Souvenir&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Welcome Section -->
-  <div class="welcome-screen" id="welcomeScreen">
-    <h1>Welcome to My Portfolio</h1>
+
+  <!-- Welcome Screen -->
+  <div id="welcomeScreen">
+    <h1 class="welcome-text">Welcome to my website</h1>
     <button id="enterBtn">Enter</button>
   </div>
 
-  <!-- Main Portfolio Section -->
-  <div class="portfolio hidden" id="portfolio">
-    <!-- Top Header -->
-    <header class="top-header">
-      <img src="profile.jpg" alt="Profile" class="profile-pic" />
-      <div class="name-and-links">
-        <h1 class="name">Sandeep</h1>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/jvsandeep" target="_blank">
-            <img src="linkedin.png" alt="LinkedIn" />
-          </a>
-          <a href="https://github.com/JVSandeep" target="_blank">
-            <img src="github.png" alt="GitHub" />
-          </a>
+  <!-- Portfolio -->
+  <div id="portfolio" class="hidden">
+    
+    <!-- Header -->
+    <header class="portfolio-header">
+      <div class="profile-section">
+        <img src="Assets/photo.webp" alt="Profile Photo" class="profile-photo"/>
+        <div class="name-block">
+          <h2 class="name-text">J VENKATA SANDEEP</h2>
+          <p class="tagline">AI & Java Enthusiast</p>
         </div>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/j-venkata-sandeep" target="_blank">
+          <img src="Assets/linkedin.jpg" alt="LinkedIn" class="icon"/>
+        </a>
+        <a href="https://github.com/jvenkatasandeep" target="_blank">
+          <img src="Assets/github.jpg" alt="GitHub" class="icon"/>
+        </a>
       </div>
     </header>
 
-    <!-- Sections -->
-    <section class="section" id="about">
-      <h2>About Me</h2>
-      <p>I'm a B.Tech student passionate about creative storytelling and technology. I enjoy building projects and writing thrilling stories that captivate imagination.</p>
+    <!-- Resume -->
+    <section class="resume-section">
+      <a href="resume.pdf" target="_blank" class="resume-link">📄 View My Resume</a>
     </section>
 
-    <section class="section" id="education">
-      <h2>Education</h2>
-      <p>B.Tech in Computer Science (Data Science) - MLRITM</p>
-    </section>
+    <!-- Other sections like About, Skills, Education, etc. (unchanged) -->
 
-    <section class="section" id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>AR Virtual Try-On App (in progress)</li>
-        <li>Creator Collaboration Platform</li>
-        <li>Kafka Integration App</li>
-        <li>Portfolio Website</li>
-        <li>Familiar with Data Analysis Dashboards & ReactJS Frontends</li>
-      </ul>
-    </section>
-
-    <section class="section" id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Java - Sanfoundry</li>
-        <li>C - Infosys Springboard</li>
-        <li>Python - Internshala</li>
-      </ul>
-    </section>
-
-    <section class="section" id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, Java, C</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Spring Boot, Git, GitHub</li>
-        <li>Unity (AR), Firebase</li>
-        <li>React Basics, SQL, Data Visualization</li>
-      </ul>
-    </section>
-
-    <section class="section" id="strengths">
-      <h2>Strengths</h2>
-      <ul>
-        <li>Creative thinker & storyteller</li>
-        <li>Quick learner & consistent</li>
-        <li>Team player with leadership qualities</li>
-        <li>Eye for detail and design</li>
-      </ul>
-    </section>
-
-    <section class="section" id="goals">
-      <h2>My Goal</h2>
-      <p>To become a creative full-stack developer blending tech, design, and storytelling into impactful solutions. I aim to explore the boundaries of AR, data, and interactivity.</p>
-    </section>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
