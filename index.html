@@ -4,80 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sandeep's Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400;700&display=swap">
 </head>
 <body>
-
-  <header>
-    <h1>Sandeep Venkata</h1>
-    <p>Data Science Enthusiast • Full Stack Learner • Story Crafter</p>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Computer Science (Data Science) student with a passion for storytelling, horror filmmaking, and full-stack development. 
-      I love turning complex data into meaningful visual experiences and crafting creative apps and videos.
-    </p>
-  </section>
-
-  <section id="strengths">
-    <h2>Strengths</h2>
-    <ul>
-      <li>Creative thinker with visual storytelling skills</li>
-      <li>Ability to quickly learn new tools & tech</li>
-      <li>Team player with leadership mindset</li>
-      <li>Idea-driven and solution-focused approach</li>
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Python</span>
-      <span>Java</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Firebase</span>
-      <span>Git & GitHub</span>
-      <span>Storyboarding</span>
-      <span>CapCut / VN Editor</span>
-      <span>Data Analysis</span>
-      <span>SQL</span>
-    </div>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MLRITM</strong> – B.Tech in Computer Science (Data Science) – Present</li>
-      <li><strong>GPT YGT</strong> – Diploma in Engineering</li>
-      <li><strong>Newton High School</strong> – SSC</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul class="projects">
-      <li><strong>RentSaviour</strong> – App for hostel students to rent emergency items quickly.</li>
-      <li><strong>Creator Collab</strong> – Team-finding app for creators to collaborate on temporary projects.</li>
-      <li><strong>Horror Video Series</strong> – Visual storytelling of horror fiction using AI visuals and editing.</li>
-      <li><strong>Portfolio Website</strong> – This website to showcase my skills and creativity.</li>
-    </ul>
-  </section>
-
-  <div class="social">
-    <a href="https://github.com/venkatasandeepj" target="_blank">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Instagram</a>
-    <a href="#">Email</a>
+  <!-- Welcome Section -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <h1>Welcome to My Portfolio</h1>
+    <button id="enterBtn">Enter</button>
   </div>
 
-  <footer>
-    &copy; 2025 Sandeep Venkata. All rights reserved. | Made with ❤️ and Gold.
-  </footer>
+  <!-- Main Portfolio Section -->
+  <div class="portfolio hidden" id="portfolio">
+    <!-- Top Header -->
+    <header class="top-header">
+      <img src="profile.jpg" alt="Profile" class="profile-pic" />
+      <div class="name-and-links">
+        <h1 class="name">Sandeep</h1>
+        <div class="socials">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com" target="_blank">
+            <img src="github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </header>
 
+    <!-- Sections -->
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>I'm a B.Tech student passionate about creative storytelling and technology. I enjoy building projects and writing thrilling stories that captivate imagination.</p>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <p>B.Tech in Computer Science (Data Science) - MLRITM</p>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>AR Virtual Try-On App (in progress)</li>
+        <li>Creator Collaboration Platform</li>
+        <li>Kafka Integration App</li>
+        <li>Portfolio Website</li>
+        <li>Familiar with Data Analysis Dashboards & ReactJS Frontends</li>
+      </ul>
+    </section>
+
+    <section class="section" id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Java - Sanfoundry</li>
+        <li>C - Infosys Springboard</li>
+        <li>Python - Internshala</li>
+      </ul>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, Java, C</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Spring Boot, Git, GitHub</li>
+        <li>Unity (AR), Firebase</li>
+        <li>React Basics, SQL, Data Visualization</li>
+      </ul>
+    </section>
+
+    <section class="section" id="strengths">
+      <h2>Strengths</h2>
+      <ul>
+        <li>Creative thinker & storyteller</li>
+        <li>Quick learner & consistent</li>
+        <li>Team player with leadership qualities</li>
+        <li>Eye for detail and design</li>
+      </ul>
+    </section>
+
+    <section class="section" id="goals">
+      <h2>My Goal</h2>
+      <p>To become a creative full-stack developer blending tech, design, and storytelling into impactful solutions. I aim to explore the boundaries of AR, data, and interactivity.</p>
+    </section>
+  </div>
 </body>
 </html>
