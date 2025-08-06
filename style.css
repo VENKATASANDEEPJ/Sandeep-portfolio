@@ -11,10 +11,9 @@
 body {
   font-family: 'Souvenir', serif;
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-  color: #e0e0e0;
+  color: #f2f2f2;
   min-height: 100vh;
   overflow-x: hidden;
-  font-size: 16px;
 }
 
 /* Welcome Screen */
@@ -25,40 +24,37 @@ body {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background: radial-gradient(circle, #202020, #0f0f0f);
-  color: #fff;
+  background-color: #0f0f0f;
 }
 
 .welcome-screen h1 {
-  font-family: 'Bickham Script Pro', cursive;
-  font-size: 3.5rem;
-  font-weight: 600;
-  margin-bottom: 25px;
-  color: #ffffffdd;
-  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  color: #ffcb74;
+  margin-bottom: 24px;
 }
 
 .welcome-screen button {
   padding: 14px 36px;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border: none;
-  border-radius: 10px;
-  background-color: #ff4b4b;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #ff6363, #ff914d);
   color: white;
   cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 99, 99, 0.4);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 75, 75, 0.3);
 }
 
 .welcome-screen button:hover {
-  background-color: #ff2c2c;
-  transform: translateY(-2px);
+  background: linear-gradient(45deg, #ff4747, #ff7a26);
+  transform: scale(1.05);
 }
 
 /* Portfolio Layout */
 .portfolio {
-  padding: 60px;
+  padding: 50px 30px;
   animation: fadeIn 1s ease-in-out forwards;
   display: none;
 }
@@ -71,7 +67,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  gap: 24px;
+  gap: 20px;
 }
 
 .profile-pic {
@@ -79,8 +75,8 @@ body {
   height: 110px;
   border-radius: 20px;
   object-fit: cover;
-  border: 3px solid #ffffff25;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border: 2px solid #ffffff50;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .name-and-links {
@@ -90,11 +86,10 @@ body {
 }
 
 .name {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #fafafa;
-  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .socials {
@@ -108,42 +103,33 @@ body {
   height: 26px;
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
-  opacity: 0.85;
 }
 
 .socials img:hover {
-  transform: scale(1.25);
-  opacity: 1;
+  transform: scale(1.2);
 }
 
-/* Section Styling */
 .section {
-  border: 1px solid #ffffff15;
+  border: 1px solid #ffffff18;
   padding: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   border-radius: 18px;
-  background-color: #1c1c1c;
-  box-shadow: 0 0 18px #00000060;
-  transition: all 0.3s ease;
-}
-
-.section:hover {
-  box-shadow: 0 0 22px #00000090;
+  background: linear-gradient(135deg, #1d1d1d, #2a2a2a);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
 }
 
 .section h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Playfair Display', serif;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   color: #ffb347;
-  letter-spacing: 0.5px;
 }
 
 .section p,
 .section ul {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #dddddd;
+  font-size: 1.06rem;
+  line-height: 1.75;
+  color: #e6e6e6;
 }
 
 .section ul {
@@ -151,7 +137,6 @@ body {
   list-style-type: disc;
 }
 
-/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -171,19 +156,19 @@ body {
   }
 
   .profile-pic {
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
   }
 
   .name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .section h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
-  .portfolio {
-    padding: 30px 20px;
+  .section {
+    padding: 20px;
   }
 }
