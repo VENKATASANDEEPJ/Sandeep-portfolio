@@ -1,5 +1,5 @@
-/* Import a classy Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;700&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400;700&display=swap');
 
 * {
   margin: 0;
@@ -10,104 +10,155 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #0a0a0a;
-  color: #f1c40f;
+  background: linear-gradient(135deg, #101010, #1c1c1c);
+  color: #f0f0f0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Welcome Screen */
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.welcome-screen h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.welcome-screen button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6363;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.welcome-screen button:hover {
+  background-color: #ff2e2e;
+}
+
+/* Portfolio Layout */
+.portfolio {
+  padding: 40px;
+  animation: fadeIn 1s ease-in-out forwards;
+  display: none;
+}
+
+.portfolio.show {
+  display: block;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 3px solid #ffffff30;
+}
+
+.name-and-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.section {
+  border: 1px solid #ffffff1a;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  background-color: #1b1b1b;
+  box-shadow: 0 0 10px #00000070;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  color: #ffb347;
+}
+
+.section p, .section ul {
+  font-size: 1rem;
   line-height: 1.6;
 }
 
-header {
-  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-  padding: 30px;
-  text-align: center;
-  border-bottom: 2px solid #f1c40f;
+.section ul {
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-header p {
-  font-size: 1.2rem;
-  color: #aaa;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-  border-bottom: 1px solid #333;
-  transition: all 0.5s ease;
-}
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
 
-section:hover {
-  background-color: #111;
-}
+  .name {
+    font-size: 1.5rem;
+  }
 
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #f1c40f;
-  border-left: 6px solid #f1c40f;
-  padding-left: 12px;
-  font-family: 'Playfair Display', serif;
-}
-
-ul, ol {
-  padding-left: 30px;
-}
-
-.skills span {
-  display: inline-block;
-  background-color: #1f1f1f;
-  color: #f1c40f;
-  padding: 10px 20px;
-  margin: 8px;
-  border-radius: 25px;
-  border: 1px solid #f1c40f;
-  transition: 0.4s ease-in-out;
-}
-
-.skills span:hover {
-  background-color: #f1c40f;
-  color: #000;
-}
-
-.projects li {
-  margin-bottom: 12px;
-  line-height: 1.8;
-}
-
-.social {
-  text-align: center;
-  padding: 30px 0;
-  background-color: #0d0d0d;
-}
-
-.social a {
-  display: inline-block;
-  margin: 10px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #f1c40f;
-  padding: 12px 24px;
-  border: 1px solid #f1c40f;
-  border-radius: 30px;
-  transition: all 0.4s ease;
-}
-
-.social a:hover {
-  background-color: #f1c40f;
-  color: #000;
-}
-
-footer {
-  background-color: #0a0a0a;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  border-top: 1px solid #333;
-  color: #777;
+  .section h2 {
+    font-size: 1.5rem;
+  }
 }
