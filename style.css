@@ -1,5 +1,4 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Souvenir&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bickham+Script+One&family=Souvenir&display=swap');
 
 * {
   margin: 0;
@@ -10,165 +9,121 @@
 
 body {
   font-family: 'Souvenir', serif;
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-  color: #f2f2f2;
-  min-height: 100vh;
-  overflow-x: hidden;
+  background-color: #0a0a0a;
+  color: white;
 }
 
 /* Welcome Screen */
-.welcome-screen {
+#welcomeScreen {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  text-align: center;
-  background-color: #0f0f0f;
+  align-items: center;
+  font-family: 'Bickham Script One', cursive;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #1e1e1e, #121212);
 }
 
-.welcome-screen h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.2rem;
-  color: #ffcb74;
-  margin-bottom: 24px;
+.welcome-text {
+  margin-bottom: 20px;
+  color: #f3e9dc;
 }
 
-.welcome-screen button {
-  padding: 14px 36px;
+#enterBtn {
+  padding: 10px 25px;
   font-size: 1.2rem;
-  font-weight: 600;
+  background-color: #f3e9dc;
+  color: #000;
   border: none;
-  border-radius: 12px;
-  background: linear-gradient(45deg, #ff6363, #ff914d);
-  color: white;
+  border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(255, 99, 99, 0.4);
   transition: all 0.3s ease;
 }
 
-.welcome-screen button:hover {
-  background: linear-gradient(45deg, #ff4747, #ff7a26);
+#enterBtn:hover {
+  background-color: #ffffff;
   transform: scale(1.05);
 }
 
-/* Portfolio Layout */
-.portfolio {
-  padding: 50px 30px;
-  animation: fadeIn 1s ease-in-out forwards;
+/* Portfolio Section */
+.hidden {
   display: none;
 }
 
-.portfolio.show {
-  display: block;
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #333;
 }
 
-.top-header {
+.profile-section {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
-  gap: 20px;
 }
 
-.profile-pic {
-  width: 110px;
-  height: 110px;
+.profile-photo {
+  width: 90px;
+  height: 90px;
   border-radius: 20px;
   object-fit: cover;
-  border: 2px solid #ffffff50;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  margin-right: 20px;
+  border: 2px solid #f3e9dc;
 }
 
-.name-and-links {
+.name-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 5px;
 }
 
-.name {
-  font-size: 2.2rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.socials {
-  display: flex;
-  gap: 12px;
-  margin-top: 8px;
-}
-
-.socials img {
-  width: 26px;
-  height: 26px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.socials img:hover {
-  transform: scale(1.2);
-}
-
-.section {
-  border: 1px solid #ffffff18;
-  padding: 30px;
-  margin-bottom: 35px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, #1d1d1d, #2a2a2a);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
-}
-
-.section h2 {
+.name-text {
   font-size: 1.8rem;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 14px;
-  color: #ffb347;
+  font-weight: bold;
 }
 
-.section p,
-.section ul {
-  font-size: 1.06rem;
-  line-height: 1.75;
-  color: #e6e6e6;
+.tagline {
+  font-size: 1rem;
+  color: #cccccc;
 }
 
-.section ul {
-  padding-left: 24px;
-  list-style-type: disc;
+/* Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .top-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.icon:hover {
+  transform: scale(1.1);
+}
 
-  .profile-pic {
-    width: 90px;
-    height: 90px;
-  }
+/* Resume Section */
+.resume-section {
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .name {
-    font-size: 1.6rem;
-  }
+.resume-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #f3e9dc;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
 
-  .section h2 {
-    font-size: 1.4rem;
-  }
-
-  .section {
-    padding: 20px;
-  }
+.resume-link:hover {
+  background-color: #ffffff;
 }
