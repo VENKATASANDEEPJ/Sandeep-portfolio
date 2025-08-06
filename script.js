@@ -1,12 +1,4 @@
-// Handle Welcome Screen Button
-document.addEventListener("DOMContentLoaded", () => {
-  const enterBtn = document.getElementById("enterBtn");
-  const welcomeScreen = document.getElementById("welcomeScreen");
-  const portfolio = document.getElementById("portfolio");
-
-  enterBtn.addEventListener("click", () => {
-    welcomeScreen.style.display = "none";
-    portfolio.classList.remove("hidden");
-    portfolio.classList.add("show");
-  });
+document.getElementById('enterBtn').addEventListener('click', function () {
+  document.getElementById('welcomeScreen').classList.add('hidden');
+  document.getElementById('portfolio').classList.remove('hidden');
 });
