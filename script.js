@@ -1,13 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const emailBtn = document.getElementById("emailBtn");
-  const detailsCard = document.getElementById("detailsCard");
+// Handle Welcome Screen Button
+const enterBtn = document.getElementById('enterBtn');
+const welcomeScreen = document.getElementById('welcomeScreen');
+const portfolio = document.getElementById('portfolio');
 
-  emailBtn.addEventListener("click", () => {
-    // Toggle visibility
-    if (detailsCard.style.display === "block") {
-      detailsCard.style.display = "none";
-    } else {
-      detailsCard.style.display = "block";
-    }
-  });
+enterBtn.addEventListener('click', () => {
+  welcomeScreen.style.display = 'none';
+  portfolio.classList.remove('hidden');
+  portfolio.classList.add('show');
 });
