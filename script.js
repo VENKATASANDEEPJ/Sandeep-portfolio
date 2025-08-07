@@ -13,4 +13,3 @@ enterButton.addEventListener('click', () => {
     }, 50);
   }, 500);
 });
-
