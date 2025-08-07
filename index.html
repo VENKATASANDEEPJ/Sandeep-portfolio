@@ -1,51 +1,94 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>J Venkata Sandeep - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J Venkata Sandeep | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bickham+Script+One&family=Souvenir&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bickham+Script+Pro&family=Souvenir&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-  <!-- Welcome Screen -->
-  <div id="welcomeScreen">
-    <h1 class="welcome-text">Welcome to my website</h1>
-    <button id="enterBtn">Enter</button>
+  <div class="welcome-screen">
+    <h1 class="welcome-text">Welcome to my portfolio</h1>
+    <button id="enterBtn">Click to Enter</button>
   </div>
 
-  <!-- Portfolio -->
-  <div id="portfolio" class="hidden">
-    
-    <!-- Header -->
-    <header class="portfolio-header">
-      <div class="profile-section">
-        <img src="Assets/photo.webp" alt="Profile Photo" class="profile-photo"/>
-        <div class="name-block">
-          <h2 class="name-text">J VENKATA SANDEEP</h2>
-          <p class="tagline">AI & Java Enthusiast</p>
+  <div class="portfolio" id="portfolio">
+    <header>
+      <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
+      <div class="header-details">
+        <h2>J Venkata Sandeep</h2>
+        <div class="social-icons">
+          <a href="https://github.com/jvenkatasandeep" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/jvenkatasandeep" target="_blank">LinkedIn</a>
         </div>
-      </div>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/j-venkata-sandeep" target="_blank">
-          <img src="Assets/linkedin.jpg" alt="LinkedIn" class="icon"/>
-        </a>
-        <a href="https://github.com/jvenkatasandeep" target="_blank">
-          <img src="Assets/github.jpg" alt="GitHub" class="icon"/>
-        </a>
       </div>
     </header>
 
-    <!-- Resume -->
-    <section class="resume-section">
-      <a href="resume.pdf" target="_blank" class="resume-link">📄 View My Resume</a>
+    <section class="about">
+      <h3>About Me</h3>
+      <p>B.Tech student (CSE - Data Science) passionate about writing stories on fantasy, thriller, and mystery. Exploring tech and creativity side by side.</p>
     </section>
 
-    <!-- Other sections like About, Skills, Education, etc. (unchanged) -->
+    <section class="education">
+      <h3>Education</h3>
+      <ul>
+        <li>B.Tech - CSE (Data Science), MLRITM</li>
+      </ul>
+    </section>
 
+    <section class="projects">
+      <h3>Projects</h3>
+      <ul>
+        <li>Done: Kafka Listener, Spring Boot with H2 DB</li>
+        <li>Doing: AR Virtual Try-On App (Unity)</li>
+        <li>Familiar: React Portfolio, Creator Collab App</li>
+      </ul>
+    </section>
+
+    <section class="certifications">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Java - Sanfoundry</li>
+        <li>C - Infosys Springboard</li>
+        <li>Python - Internshala</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>Python, Java, C, ReactJS, Spring Boot</li>
+        <li>Unity, Firebase, Git, GitHub</li>
+        <li>Data Analysis, AR/VR, Video Editing</li>
+      </ul>
+    </section>
+
+    <section class="strengths">
+      <h3>Strengths</h3>
+      <ul>
+        <li>Creative Thinking</li>
+        <li>Quick Learner</li>
+        <li>Team Collaboration</li>
+      </ul>
+    </section>
+
+    <section class="goals">
+      <h3>Goals</h3>
+      <p>To become a tech-savvy creative storyteller and a versatile developer combining AI, AR, and storytelling.</p>
+    </section>
+
+    <section class="languages">
+      <h3>Languages Known</h3>
+      <ul>
+        <li>English</li>
+        <li>German</li>
+      </ul>
+    </section>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
