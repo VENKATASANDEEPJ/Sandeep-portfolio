@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Venkata Sandeep - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bickham+Script+One&family=Souvenir&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div id="welcome-screen">
-    <button id="enter-btn">Welcome to My Portfolio</button>
+  <!-- Entry button -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <button class="welcome-btn" onclick="enterPortfolio()">Welcome to my Portfolio</button>
   </div>
 
-  <div id="portfolio" class="hidden">
+  <!-- Portfolio Content -->
+  <div class="portfolio-container" id="portfolioContainer">
     <header>
       <div class="profile">
-        <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
-        <div class="info">
+        <img src="profile.jpg" alt="J Venkata Sandeep">
+        <div class="profile-details">
           <h1>J Venkata Sandeep</h1>
-          <a href="https://www.linkedin.com/in/jvenkatasandeep" target="_blank">LinkedIn</a>
-          <a href="https://github.com/jvenkatasandeep" target="_blank">GitHub</a>
+          <div class="social-icons">
+            <a href="https://github.com/sandeepgithub" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/sandeeplinkedin" target="_blank">LinkedIn</a>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <section class="about">
-        <h2>About</h2>
-        <p>I'm a B.Tech Computer Science (Data Science) student with a passion for storytelling and creating innovative digital projects, from apps to AR experiences.</p>
+        <h2>About Me</h2>
+        <p>I am passionate about story writing, fantasy, thriller, and mystery. I’m currently pursuing B.Tech in CSE (Data Science).</p>
       </section>
 
       <section class="education">
         <h2>Education</h2>
-        <ul>
-          <li>MLRITM - B.Tech in CSE (Data Science)</li>
-        </ul>
+        <p>B.Tech - MLRITM</p>
       </section>
 
       <section class="projects">
         <h2>Projects</h2>
         <ul>
-          <li>RentSaviour – emergency renting app for students</li>
-          <li>Creator Collab App – teammate finder for project creators</li>
-          <li>AR Virtual Try-On – Unity-based facial item placement</li>
+          <li>Done: Kafka Integration, Creator-Collab App Phase 1</li>
+          <li>Doing: AR Virtual Try-On App</li>
+          <li>Familiar With: Portfolio, Horror Story Video, etc.</li>
         </ul>
       </section>
 
       <section class="certifications">
         <h2>Certifications</h2>
         <ul>
-          <li>Java – Sanfoundry</li>
-          <li>C – Infosys Springboard</li>
-          <li>Python – Internshala</li>
+          <li>Java - Sanfoundry</li>
+          <li>C - Infosys Springboard</li>
+          <li>Python - Internshala</li>
         </ul>
       </section>
 
       <section class="skills">
         <h2>Skills</h2>
-        <p>Python, Java, C, HTML, CSS, JavaScript, React, Unity (AR), Firebase, Git & GitHub</p>
+        <ul>
+          <li>Python, Java, C</li>
+          <li>Data Science, Spring Boot</li>
+          <li>Unity (AR Development), Git/GitHub</li>
+          <li>Web Development (HTML, CSS, JS)</li>
+        </ul>
       </section>
 
       <section class="strengths">
         <h2>Strengths</h2>
-        <ul>
-          <li>Creative thinking</li>
-          <li>Teamwork</li>
-          <li>Adaptability</li>
-        </ul>
+        <p>Creative thinker, Team player, Persistent learner.</p>
       </section>
 
       <section class="goals">
         <h2>Goals</h2>
-        <p>To master full-stack development, AR technologies, and build innovative platforms that help others collaborate and grow.</p>
+        <p>To become a skilled full-stack developer and storyteller in the tech space.</p>
       </section>
 
       <section class="languages">
         <h2>Languages</h2>
-        <ul>
-          <li>English</li>
-          <li>German</li>
-        </ul>
+        <p>English, German</p>
       </section>
     </main>
   </div>
-
-  <script src="script.js"></script>
 </body>
+
 </html>
