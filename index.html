@@ -1,94 +1,88 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>J Venkata Sandeep | Portfolio</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bickham+Script+Pro&family=Souvenir&display=swap" rel="stylesheet">
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="welcome-screen">
-    <h1 class="welcome-text">Welcome to my portfolio</h1>
-    <button id="enterBtn">Click to Enter</button>
+  <div id="welcome-screen">
+    <button id="enter-btn">Welcome to My Portfolio</button>
   </div>
 
-  <div class="portfolio" id="portfolio">
+  <div id="portfolio" class="hidden">
     <header>
-      <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
-      <div class="header-details">
-        <h2>J Venkata Sandeep</h2>
-        <div class="social-icons">
+      <div class="profile">
+        <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
+        <div class="info">
+          <h1>J Venkata Sandeep</h1>
+          <a href="https://www.linkedin.com/in/jvenkatasandeep" target="_blank">LinkedIn</a>
           <a href="https://github.com/jvenkatasandeep" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/jvenkatasandeep" target="_blank">LinkedIn</a>
         </div>
       </div>
     </header>
 
-    <section class="about">
-      <h3>About Me</h3>
-      <p>B.Tech student (CSE - Data Science) passionate about writing stories on fantasy, thriller, and mystery. Exploring tech and creativity side by side.</p>
-    </section>
+    <main>
+      <section class="about">
+        <h2>About</h2>
+        <p>I'm a B.Tech Computer Science (Data Science) student with a passion for storytelling and creating innovative digital projects, from apps to AR experiences.</p>
+      </section>
 
-    <section class="education">
-      <h3>Education</h3>
-      <ul>
-        <li>B.Tech - CSE (Data Science), MLRITM</li>
-      </ul>
-    </section>
+      <section class="education">
+        <h2>Education</h2>
+        <ul>
+          <li>MLRITM - B.Tech in CSE (Data Science)</li>
+        </ul>
+      </section>
 
-    <section class="projects">
-      <h3>Projects</h3>
-      <ul>
-        <li>Done: Kafka Listener, Spring Boot with H2 DB</li>
-        <li>Doing: AR Virtual Try-On App (Unity)</li>
-        <li>Familiar: React Portfolio, Creator Collab App</li>
-      </ul>
-    </section>
+      <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>RentSaviour – emergency renting app for students</li>
+          <li>Creator Collab App – teammate finder for project creators</li>
+          <li>AR Virtual Try-On – Unity-based facial item placement</li>
+        </ul>
+      </section>
 
-    <section class="certifications">
-      <h3>Certifications</h3>
-      <ul>
-        <li>Java - Sanfoundry</li>
-        <li>C - Infosys Springboard</li>
-        <li>Python - Internshala</li>
-      </ul>
-    </section>
+      <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Java – Sanfoundry</li>
+          <li>C – Infosys Springboard</li>
+          <li>Python – Internshala</li>
+        </ul>
+      </section>
 
-    <section class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>Python, Java, C, ReactJS, Spring Boot</li>
-        <li>Unity, Firebase, Git, GitHub</li>
-        <li>Data Analysis, AR/VR, Video Editing</li>
-      </ul>
-    </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <p>Python, Java, C, HTML, CSS, JavaScript, React, Unity (AR), Firebase, Git & GitHub</p>
+      </section>
 
-    <section class="strengths">
-      <h3>Strengths</h3>
-      <ul>
-        <li>Creative Thinking</li>
-        <li>Quick Learner</li>
-        <li>Team Collaboration</li>
-      </ul>
-    </section>
+      <section class="strengths">
+        <h2>Strengths</h2>
+        <ul>
+          <li>Creative thinking</li>
+          <li>Teamwork</li>
+          <li>Adaptability</li>
+        </ul>
+      </section>
 
-    <section class="goals">
-      <h3>Goals</h3>
-      <p>To become a tech-savvy creative storyteller and a versatile developer combining AI, AR, and storytelling.</p>
-    </section>
+      <section class="goals">
+        <h2>Goals</h2>
+        <p>To master full-stack development, AR technologies, and build innovative platforms that help others collaborate and grow.</p>
+      </section>
 
-    <section class="languages">
-      <h3>Languages Known</h3>
-      <ul>
-        <li>English</li>
-        <li>German</li>
-      </ul>
-    </section>
+      <section class="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>English</li>
+          <li>German</li>
+        </ul>
+      </section>
+    </main>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
